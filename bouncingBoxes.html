@@ -20,11 +20,9 @@ let context = canvas.getContext("2d");
 
 
 
-const NUM_POINTS = 5; // play with this after you finished implementing draw, it's fun :-)
+const NUM_POINTS = 5; 
 
 
-
-// create points
 
 const points = [];
 
@@ -40,9 +38,8 @@ for(let i = 0; i < NUM_POINTS; i++) {
 
     height: Math.random() * 100,
 
-    xDelta: 1, // the change that you will add to x, you can flip it when you get to the edge
-
-    yDelta: 1, // the change that you will add to y, you can flip it when you get to the edge
+    xDelta: 1, 
+    yDelta: 1, 
 
     color: 'red'
 
@@ -54,9 +51,7 @@ for(let i = 0; i < NUM_POINTS; i++) {
 
 const draw = function() {
 
-  // TODO: Put your code here
-
-  // 1. clear the original canvas
+  
   context.clearRect(0, 0, canvas.width, canvas.height)
 
   // 2. for each point
@@ -75,13 +70,7 @@ const draw = function() {
         point.y += point.yDelta;
       });
     }
-  //      1. draw it
 
-  //      2. check if the point has gone beyond left or right part of the canvas - if so, flip xDelta
-
-  //      3. check if the point has gone beyond the top or bottom of the canvas - if so, flip the yDelta
-
-  //      4. add the point's xDelta and yDelta to the point's x and y
 
 
 
